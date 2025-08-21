@@ -1,0 +1,27 @@
+#action {
+  color: pink;
+  font-size: 25px;
+}
+.btn button{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 15px;
+  background-color: lightpink;
+  border-radius: 10px;
+  border-color: white;
+}
+
+body{
+  text-align: center;
+  /*text-decoration: wavy;*/
+  text-transform: uppercase;
+  background-color: lightgoldenrodyellow;
+  color: aquamarine;
+  /*
+  width: 1000px;
+  padding: 15px;
+  border: 5px  aqua;
+  margin: 10px;*/
+  border-style: dashed;
+
+}
