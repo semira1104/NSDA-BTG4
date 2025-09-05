@@ -1,23 +1,32 @@
 <html>
 <head>
 
-<title><b><i>Simple to do list</i></b></title><br>
+<title>Simple to do list</title><br>
 <link rel="stylesheet" href="style.css">
 
 <!--Internal CSS-->
 <style>
   h1{ color: pink; font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
 </style>
+
 </head>
 <body>
+<div id="title">
 
-  <h1>Simple to do list</h1> <hr>
+  <h1>Simple to do list</h1><hr></div>
   <!--InLine CSS-->
-  <p style="color: lightblue; font-size: 30px; font-family: cursive;">Action plans</p><hr>
+  <p style="color: lightblue; font-size: 30px; font-family: cursive;"><span>Action plans</span></p><hr>
+</div>
+<div class="intro">
+<div class="intro-item">Name</div>
+<div class="intro-item">Father name</div>
+<div class="intro-item">phone number</div>
+<div class="intro-item">Semira</div>
+<div class="intro-item">musema</div>
+<div class="intro-item">0911223344</div>
+</div>
 
-  <div id="action">
-
+<div id="action">
 <label for="Study">Study</label>
   <input type="checkbox"id="action1"name="action1"value="Study"><br>
 <hr>
@@ -27,21 +36,32 @@
   <label for="Volunteer">Volunteer</label>
   <input type="checkbox"id="action3"name="action3"value="Volunteer"><br>
 <hr>
+  </div>
+  <div id="Things">
+<label for="eat healthy">Eat healthy</label>
+  <input type="checkbox"id="things1"name="things1"value="Study"><br>
+<hr>
+<label for="go to mosque">go to mosque</label>
+  <input type="checkbox"id="things2"name="things2"value="Clean my room"><br>
+<hr>
+  <label for="wash my hair">wash my hair</label>
+  <input type="checkbox"id="things3"name="things3"value="Volunteer"><br>
+<hr>
+</div>
+<div id="task">
 <label for="Face mask">Apply Face mask</label>
-  <input type="checkbox"id="action4"name="action4"value="Face mask"><br>
+  <input type="checkbox"id="task1"name="task1"value="Face mask"><br>
 <hr>
 <label for="Recite my daily Azkar">Recite my daily Azkar</label>
-  <input type="checkbox"id="action5"name="action5"value="Recite my daily Azkar"><br>
+  <input type="checkbox"id="task2"name="task2"value="Recite my daily Azkar"><br>
 <hr>
 <label for="Meet my friends">Meet my friends</label>
-  <input type="checkbox"id="action6"name="action6"value="Meet my friends"><br>
+  <input type="checkbox"id="task3"name="task3"value="Meet my friends"><br>
 <hr>
   </div>
-
-  <div class="btn">
-  <button type="Done">Done</button>
-  <button type="Restart">Restart</button>
+<div class="button">
+  <button class="Done">Done</button>
+  <button class="done">Restart</button>
   </div>
-
 </body>
 </html>
