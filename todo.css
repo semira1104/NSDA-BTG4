@@ -1,0 +1,81 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: whitesmoke;
+  color: grey;
+}
+
+#title h1 {
+  text-align: center;
+  color: rgb(255, 0, 85);
+  margin-top: 20px;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+p span {
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #4c8bf5;
+  margin: 15px 0;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+#taskList li {
+  background: white;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+#taskList li:hover {
+  transform: scale(1.02);
+}
+
+#taskList input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.2);
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button button {
+  background-color: rgb(255, 0, 102);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+.button button:hover {
+  background: rgb(219, 60, 134);
+}
+
+#resetBtn {
+  background: rgb(78, 96, 231);
+}
+
+#resetBtn:hover {
+  background: rgb(40, 76, 177);
+}
