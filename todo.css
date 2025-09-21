@@ -1,15 +1,16 @@
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: whitesmoke;
+  background-color: hotpink;
   color: grey;
+  text-align: center;
 }
 
 #title h1 {
   text-align: center;
-  color: rgb(255, 0, 85);
+  color: rgb(55, 8, 38);
   margin-top: 20px;
   font-size: 2.2rem;
   letter-spacing: 1px;
@@ -20,37 +21,57 @@ p span {
   text-align: center;
   font-size: 1.4rem;
   font-weight: bold;
-  color: #4c8bf5;
+  color: #3174e7;
   margin: 15px 0;
+  ;
 }
 
-#taskList {
-  list-style: none;
-  padding: 0;
+.todo-container{
+  background-color: lightpink;
+  max-width: 500px;
   margin: 20px auto;
-  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0,0,0,0.1;
+  text-align: left;
 }
-
-#taskList li {
-  background: white;
+.action {
   margin: 10px 0;
-  padding: 12px 15px;
-  border-radius: 12px;
-  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  transition: transform 0.2s;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: lightpink;
+  border-radius: 6px;
+  box-shadow: 0,0,0,0.5;
 }
 
-#taskList li:hover {
-  transform: scale(1.02);
+.action label {
+  font-size: 20px;
+  flex: 1;
+  margin-left: 8px;
+
+}
+.action input[type="checkbox"]{
+  transform:scale(1.2);
+}
+.action button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  background-color: rgb(3, 201, 201);
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  margin-right: 10px;
 }
 
-#taskList input[type="checkbox"] {
-  margin-right: 12px;
-  transform: scale(1.2);
+.action button:hover{
+  background-color: rgb(23, 207, 145);
+  color: black;
 }
-
 .button {
   text-align: center;
   margin-top: 20px;
@@ -69,11 +90,11 @@ p span {
 }
 
 .button button:hover {
-  background: rgb(219, 60, 134);
+  background: rgb(219, 60, 161);
 }
 
 #resetBtn {
-  background: rgb(78, 96, 231);
+  background: rgb(78, 157, 231);
 }
 
 #resetBtn:hover {
