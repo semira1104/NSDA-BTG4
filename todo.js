@@ -22,6 +22,7 @@ function check(action) {
 
   console.log(message);
 }  
+/*
 check(actions.action1);
 check(actions.action2);
 check(actions.action3);
@@ -31,8 +32,15 @@ check(actions.action6);
 check(actions.action7);
 check(actions.action8);
 check(actions.action9);
+*/
+ let actionArray=Object.values(actions);
 
+ actionArray.push({name: "Go to class", completed:false,id:actionArray.length+1})
 
+ actionArray.shift();
 
+ for(let action of actionArray) {
+  check(action);
+ }
 
 
