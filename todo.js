@@ -42,5 +42,27 @@ check(actions.action9);
  for(let action of actionArray) {
   check(action);
  }
+//week 9
+// Function Declaration 
+function addAction(name) {
+  let newAction = { name: name, completed: false, id: actionArray.length + 1 };
+  actionArray.push(newAction);
+  console.log("New action added: " + name);
+}
 
+//  Function Expression 
+const showActions = function() {
+  for (let action of actionArray) {
+    check(action);
+  }
+};
 
+//  Arrow Function 
+const removeFirstAction = () => {
+  actionArray.shift();
+  console.log("First action removed!");
+};
+
+addAction("Go to class");   // adds a new task
+removeFirstAction();        // removes the first task
+showActions();              // displays all tasks
