@@ -81,3 +81,26 @@ addButton.addEventListener("click", function() {
   showActions();
   inputBox.value = "";
 });
+
+let simpleTasks = [];
+
+let addBtn = document.getElementById("addActionBtn");
+
+addBtn.addEventListener("click", function() {
+  let taskName = inputBox.value.trim();
+  if (taskName === "") {
+    alert("Please type an action name!");
+    return;
+  }
+  simpleTasks.push(taskName);
+  alert("Task added: " + taskName + "\nTotal tasks: " + simpleTasks.length);
+  inputBox.value = "";
+});
+
+let deleteButtons = document.querySelectorAll(".action button");
+for (let btn of deleteButtons) {
+  btn.addEventListener("click", function() {
+    btn.remove();
+    alert("Task deleted!");
+  });
+}
