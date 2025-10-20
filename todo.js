@@ -66,3 +66,18 @@ const removeFirstAction = () => {
 addAction("Go to class");   // adds a new task
 removeFirstAction();        // removes the first task
 showActions();              // displays all tasks
+
+let addButton = document.getElementById("addActionBtn");
+let inputBox = document.getElementById("newActionInput");
+
+addButton.addEventListener("click", function() {
+  let newName = inputBox.value.trim();
+  if (newName === "") {
+    alert("Please type an action name!");
+    return;
+  }
+  addAction(newName);
+  alert("New action added successfully!");
+  showActions();
+  inputBox.value = "";
+});

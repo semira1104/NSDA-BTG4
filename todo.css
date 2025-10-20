@@ -100,3 +100,36 @@ p span {
 #resetBtn:hover {
   background: rgb(40, 76, 177);
 }
+
+#addSection {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#newActionInput {
+  padding: 8px 12px;
+  border: 2px solid lightpink;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+#newActionInput:focus {
+  border-color: hotpink;
+}
+
+#addActionBtn {
+  padding: 8px 12px;
+  background-color: pink;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+#addActionBtn:hover {
+  background-color: rgb(196, 84, 140);
+  color: black;
+}
